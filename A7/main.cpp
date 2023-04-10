@@ -1,6 +1,6 @@
 /*
 LÓGICA Y PROGRAMACIÓN ESTRUCTURADA
-PROYECTO INTEGRADOR ETAPA 1 
+ACTIVIDAD 7
 JUAN CARLOS MORALES HERRERA     
 */
 
@@ -11,28 +11,33 @@ using namespace std;
 
 int main() {
     string input;
-    char choice;
-    
-    cout << "Enter a string: ";
+    int choice;
+
+    cout << "=============================================" << endl;
+    cout << "      LÓGICA Y PROGRAMACIÓN ESTRUCTURADA     " << endl;
+    cout << "                  ACTIVIDAD 7                " << endl;
+    cout << "          JUAN CARLOS MORALES HERRERA        " << endl;
+    cout << "=============================================" << endl;
+    cout << "Favor de ingresar una cadena: ";
     getline(cin, input);
     
-    cout << "Display in lowercase or uppercase? (l/u): ";
+    cout << "¿Desea mostrar la cadena en mayúsculas(1) o minúsculas(2)? : ";
     cin >> choice;
     
-    if (choice == 'l' || choice == 'L') {
+    if (choice == 2) {
         for (int i = 0; i < input.length(); i++) {
             input[i] = tolower(input[i]);
         }
-        cout << "Lowercase: " << input << endl;
+        cout << "Minúsculas: " << input << endl;
     }
-    else if (choice == 'u' || choice == 'U') {
+    else if (choice == 1) {
         for (int i = 0; i < input.length(); i++) {
             input[i] = toupper(input[i]);
         }
-        cout << "Uppercase: " << input << endl;
+        cout << "Mayúscula: " << input << endl;
     }
     else {
-        cout << "Invalid choice." << endl;
+        cout << "Opción inválida." << endl;
     }
     
     return 0;
